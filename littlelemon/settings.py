@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "restaurant",
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
@@ -77,7 +78,31 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
-    }
+    },
+    # "default": {
+    #     "ENGINE": "django.db.backends.mysql",
+    #     "NAME": "my_database",
+    #     "USER": "root",
+    #     "PASSWORD": "your_password",
+    #     "HOST": "127.0.0.1",
+    #     "PORT": "3306",
+    #     "OPTIONS": {"init_command": "SET sql_mode='STRICT_TRANS_TABLES'"},
+    # },
+    # "default": {
+    #     "ENGINE": "django.db.backends.mysql",
+    #     "OPTIONS": {
+    #         "read_default_file": BASE_DIR / "my.cnf",
+    #     },
+    # },
+    # "mydb": {
+    #     "ENGINE": "django.db.backends.mysql",
+    #     "NAME": "my_database",
+    #     "USER": "root",
+    #     "PASSWORD": "your_password",
+    #     "HOST": "127.0.0.1",
+    #     "PORT": "3306",
+    #     "OPTIONS": {"init_command": "SET sql_mode='STRICT_TRANS_TABLES'"},
+    # },
 }
 
 
